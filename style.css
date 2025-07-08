@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #222;
+}
+
+.creative-coding-section {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.creative-canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.creative-canvas {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ensure p5 canvas fills the div */
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+footer {
+  text-align: left;
+  padding: 20px 40px;
+  font-size: 0.75em;
+  color: #444;
+}
